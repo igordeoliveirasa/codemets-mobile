@@ -140,7 +140,7 @@ angular.module('app.controllers', [])
         }
     }
 })
-    .controller('DashboardCtrl', function($scope, $rootScope, $ionicLoading, $compile, $ionicModal, Maps) {
+    .controller('DashboardCtrl', function($scope, $rootScope, $ionicLoading, $compile, $ionicModal) {
         $ionicLoading.show({template: 'Loading...'});
         $ionicLoading.hide();
     });
