@@ -98,19 +98,7 @@ angular.module('app.controllers', [])
         var item = $scope.item;
         var title = "Atenção...";
         var ret = false;
-        if (item.name.trim() == "") {
-            $ionicPopup.alert({
-                title: title,
-                template: 'Nome não pode ser vazio...'
-            });
-        }
-        else if (item.surname.trim() == "") {
-            $ionicPopup.alert({
-                title: title,
-                template: 'Sobrenome não pode ser vazio...'
-            });
-        }
-        else if (item.email.trim() == "") {
+        if (item.email.trim() == "") {
             $ionicPopup.alert({
                 title: title,
                 template: 'E-mail não pode ser vazio...'
@@ -147,8 +135,8 @@ angular.module('app.controllers', [])
         };
 
         if ($scope.validateItem()) {
-            $ionicLoading.show({template: "Autenticando..."});
-            Auth.signUp($scope.item.name, $scope.item.surname, $scope.item.email, $scope.item.password, $scope.item.password_confirmation).then($scope.signUpAuthSuccess,$scope.signUpAuthError);
+            $ionicLoading.show({template: "Signing Up..."});
+            Auth.signUp($scope.item.email, $scope.item.password).then($scope.signUpAuthSuccess,$scope.signUpAuthError);
         }
     }
 })
