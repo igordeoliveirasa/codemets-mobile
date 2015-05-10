@@ -1,5 +1,5 @@
 // Initializing
-Parse.initialize("ypjNpoN4i8dpNyjBlxgTmPnqr9THw9Qfj7KG8Osh", "lciIF5nt6edcrlKe1WAFwtAonnnz7ETbRL6OtM0X");
+Parse.initialize("WE1ExJbmUS4zRcKOYopvSyECi9gFJ1C1N5GFTD7l", "vprhe4lWqNvfkgurX8J6zV6sijyfo2c2jRfwv0t4");
 //var ParseService = Parse.Object.extend("Service");
 //var ParseAddress = Parse.Object.extend("Address");
 //var ParseSubcategory = Parse.Object.extend("Subcategory");
