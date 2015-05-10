@@ -1,0 +1,38 @@
+<ion-view view-title="Logar">
+  <ion-content>
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        Entrar.
+      </div>
+    </div>
+
+    <form ng-submit="signIn()">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="email" ng-model="item.email" placeholder="E-mail">
+        </label>
+        <label class="item item-input">
+          <input type="password" ng-model="item.password" placeholder="Senha">
+        </label>
+      </div>
+
+
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Logar</button>
+        </label>
+
+        <!--<div class="padding">-->
+        <!--<button class="button button-block button-positive activated">Logar</button>-->
+      <!--</div>-->
+
+    </form>
+
+    <div class="padding">
+      <a class="button button-block button-positive activated" href="#/app/sign-up">Registrar</a>
+    </div>
+
+
+  </ion-content>
+
+</ion-view>
